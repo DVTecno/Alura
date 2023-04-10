@@ -1,0 +1,36 @@
+<h1>indice de masa corporal imc</h1>
+<script>
+    document.write("<br>");
+
+function imprimir(frase){
+    document.write(frase);
+    saltarlinea(frase);
+}
+function calcularImc(peso,altura) {
+    return (peso/(altura*altura));
+}
+nombre = prompt("Informe su nombre");
+pesoInformado = prompt(nombre+", informe su peso");
+alturaInformado =prompt(nombre+", informe su altura");
+
+imcCalculado=calcularImc(pesoInformado,alturaInformado);
+
+
+if(imcCalculado<18.5) {
+    imprimir("IMC abajo de lo recomendado");
+}
+if(imcCalculado>=18.5&&imcCalculado<25) {
+    imprimir("IMC esta dentro de lo normal");
+}
+if(imcCalculado>=25&&imcCalculado<30) {
+    imprimir(nombre+", su imc calculado es: "+imcCalculado);
+}
+if(imcCalculado>=30) {
+    imprimir("IMC considerado como obesida");
+}
+
+
+
+
+
+</script>
