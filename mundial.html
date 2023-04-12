@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA ANHIO MUNDIAL FIFA </h1>
+
+<script>
+    function saltarLinea() {
+        //document.write("<br>");    
+        //document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(" "+frase);
+        saltarLinea();
+    }
+var anhioMundial =1930;
+var limite = parseInt(prompt("Ingresé un anhio limite para calcular"))
+
+
+imprimir("Hubo mundial FIFA en el anhio ")
+
+while(anhioMundial<=limite){
+    imprimir(anhioMundial)
+    anhioMundial+=4;
+    
+}
+
+alert("Fin")
+
+</script>
